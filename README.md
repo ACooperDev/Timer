@@ -22,7 +22,7 @@ Click the clock the same way you always do. The calendar opens as usual, and the
 - `pw-play` (PipeWire, installed with Omarchy) for the finish sound
 - `omarchy-notification-send` (ships with Omarchy) for the finish notification
 
-That's all it needs. It uses no network, no sudo and no background service. The only file it writes outside its own folder is its state file, `~/.local/state/omarchy/clock-timer.json`.
+That's all it needs. It uses no network, needs no elevated privileges and runs no background service. The only file it writes outside its own folder is its state file, `~/.local/state/omarchy/clock-timer.json`.
 
 ## Install
 
