@@ -4,7 +4,7 @@ The stock Omarchy bar clock, with a countdown timer and a stopwatch under the ca
 
 Click the clock the same way you always do. The calendar opens as usual, and the timer sits underneath it. While a timer or stopwatch is running, the bar shows it next to the time: `Sun 27 Sep 5:04 PM   󰔛 4:32`.
 
-![Clock + Timer](Screenshot.png)
+![Clock + Timer](preview.png)
 
 ## Features
 
