@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "acooper.clock-timer",
+  "name": "Clock + Timer",
+  "version": "1.0.0",
+  "author": "ACooperDev",
+  "description": "Date/time label with a calendar popup, plus a countdown timer and stopwatch",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Clock + Timer",
+    "description": "Date/time label with a calendar popup, plus a countdown timer and stopwatch",
+    "category": "Time",
+    "allowMultiple": false,
+    "defaults": {
+      "timerPresets": [
+        1,
+        5,
+        10,
+        25
+      ],
+      "timerSound": "/usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga",
+      "showOnBar": "On"
+    },
+    "schema": [
+      {
+        "key": "timerPresets",
+        "type": "string",
+        "label": "Timer presets",
+        "defaultValue": "[1,5,10,25]",
+        "description": "Up to six preset durations in minutes, as a JSON list or comma list."
+      },
+      {
+        "key": "timerSound",
+        "type": "path",
+        "label": "Timer sound",
+        "defaultValue": "/usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga",
+        "description": "Played with pw-play when a countdown ends. Empty for silent."
+      },
+      {
+        "key": "showOnBar",
+        "type": "enum",
+        "label": "Show running timer on the bar",
+        "options": [
+          "On",
+          "Off"
+        ],
+        "defaultValue": "On"
+      }
+    ]
+  },
+  "license": "MIT",
+  "omarchy": {
+    "clonedFrom": "omarchy.clock"
+  }
+}
